@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+  <components>
+    <component>
+      <role>org.apache.maven.project.ProjectDependenciesResolver</role>
+      <role-hint>default</role-hint>
+      <implementation>info.evanchik.maven.project.SynchronizedProjectDependenciesResolver</implementation>
+      <description />
+      <isolated-realm>false</isolated-realm>
+      <requirements>
+        <requirement>
+          <role>org.sonatype.aether.spi.log.Logger</role>
+          <role-hint />
+          <field-name>logger</field-name>
+        </requirement>
+        <requirement>
+          <role>org.eclipse.aether.RepositorySystem</role>
+          <role-hint />
+          <field-name>repoSystem</field-name>
+        </requirement>
+      </requirements>
+    </component>
+  </components>
+</component-set>
