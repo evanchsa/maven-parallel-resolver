@@ -34,12 +34,10 @@ import org.codehaus.plexus.component.annotations.Component;
 public class SynchronizedProjectDependenciesResolver extends DefaultProjectDependenciesResolver
 {
 
-    private Object lock = new Object();
-
     public DependencyResolutionResult resolve( DependencyResolutionRequest request )
         throws DependencyResolutionException
     {
-        synchronized (lock)
+        synchronized ( SynchronizedProjectDependenciesResolver.class )
         {
             return super.resolve( request );
         }
