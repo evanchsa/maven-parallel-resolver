@@ -9,12 +9,12 @@
       <isolated-realm>false</isolated-realm>
       <requirements>
         <requirement>
-          <role>org.sonatype.aether.spi.log.Logger</role>
+          <role>org.codehaus.plexus.logging.Logger</role>
           <role-hint />
           <field-name>logger</field-name>
         </requirement>
         <requirement>
-          <role>org.eclipse.aether.RepositorySystem</role>
+          <role>org.sonatype.aether.RepositorySystem</role>
           <role-hint />
           <field-name>repoSystem</field-name>
         </requirement>
