@@ -19,6 +19,7 @@
     <version>3.1.2-SNAPSHOT</version>
   </parent>
 
+  <groupId>info.evanchik.maven</groupId>
   <artifactId>synchronized-resolver</artifactId>
 
   <name>Maven Project Dependency Resolver that is concurrent safe</name>
