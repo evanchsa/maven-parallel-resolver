@@ -1,6 +1,16 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+.checkstyle
+.classpath
+.pmd
+.pmdruleset
+.pmdruleset.xml
+.project
+.ruleset
+.settings/
+target/
+velocity.log
+bin/
