@@ -1,7 +1,7 @@
 maven-parallel-resolver
 =======================
 
-A concurrent safe ProjectDependenciesResolver (Fixes MNG-5315)
+A Thread safe ProjectDependenciesResolver (Fixes MNG-5315)
 
 Place the resulting JAR in the $MAVEN_HOME/lib/ext . Alternatively the mvn
 script can be patched to point to a custom m2.conf:
