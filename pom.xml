@@ -22,7 +22,7 @@
   <groupId>info.evanchik.maven</groupId>
   <artifactId>synchronized-resolver</artifactId>
 
-  <name>Maven Project Dependency Resolver that is concurrent safe</name>
+  <name>Thread-safe Maven Project Dependency Resolver</name>
   <description>Replacement for DefaultProjectDependenciesResolver</description>
 
   <dependencies>
