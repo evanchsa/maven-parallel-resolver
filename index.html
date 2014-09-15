@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="maven-parallel-resolver : A concurrent safe ProjectDependenciesResolver (Fixes MNG-5315)">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>maven-parallel-resolver</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/evanchsa/maven-parallel-resolver">View on GitHub</a>
+
+          <h1 id="project_title">maven-parallel-resolver</h1>
+          <h2 id="project_tagline">A concurrent safe ProjectDependenciesResolver (Fixes MNG-5315)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/evanchsa/maven-parallel-resolver/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/evanchsa/maven-parallel-resolver/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="maven-parallel-resolver" class="anchor" href="#maven-parallel-resolver"><span class="octicon octicon-link"></span></a>maven-parallel-resolver</h1>
+
+<p>A Thread safe ProjectDependenciesResolver (Fixes MNG-5315)</p>
+
+<p>Place the resulting JAR in the $MAVEN_HOME/lib/ext . Alternatively the mvn
+script can be patched to point to a custom m2.conf:</p>
+
+<p>-Dclassworlds.conf=/path/to/custom/m2.conf</p>
+
+<p>with the content:</p>
+
+<p>main is org.apache.maven.cli.MavenCli from plexus.core</p>
+
+<p>set maven.home default ${user.home}/m2</p>
+
+<p>[plexus.core]
+  optionally /path/to/other/ext/<em>.jar
+  optionally ${maven.home}/lib/ext/</em>.jar
+  load       ${maven.home}/lib/*.jar</p>
+
+<h1>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements. See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership. The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License. You may obtain a copy of the License at</p>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<p>Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied. See the License for the
+  specific language governing permissions and limitations
+  under the License.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">maven-parallel-resolver maintained by <a href="https://github.com/evanchsa">evanchsa</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-29693471-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
