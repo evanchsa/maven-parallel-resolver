@@ -27,6 +27,11 @@
           <role-hint />
           <field-name>repoSystem</field-name>
         </requirement>
+        <requirement>
+          <role>org.apache.maven.project.RepositorySessionDecorator</role>
+          <role-hint />
+          <field-name>decorators</field-name>
+        </requirement>
       </requirements>
     </component>
   </components>
